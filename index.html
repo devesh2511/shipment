@@ -16,7 +16,8 @@
     <link href="css/reset.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-
+    <script type="text/javascript" src="js/script1.js"></script>
+    <script type="text/javascript" src="js/script2.js"></script>
     <!--slick css-->
     <link href="css/slick.css" rel="stylesheet">
     <!--  owl-carousel css -->
@@ -94,49 +95,6 @@
     </section>
     <!--end of header area-->
 
-    <!--   start about top area-->
-    <section class="about_top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="about_single_item">
-                        <div class="item_icon">
-                            <img src="img/item_icon.png" alt="item">
-                        </div>
-                        <div class="about_single_item_content">
-                            <h4>Fastest Delivery</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="about_single_item">
-                        <div class="item_icon">
-                            <img src="img/item_icon.png" alt="item">
-                        </div>
-                        <div class="about_single_item_content">
-                            <h4>Safest Delivery</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="about_single_item">
-                        <div class="item_icon">
-                            <img src="img/item_icon.png" alt="item">
-                        </div>
-                        <div class="about_single_item_content">
-                            <h4>Cheapest Delivery</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--    end of about top area-->
-
-
     <!--    start about us area-->
     <section class="about_us_area" id="about">
         <div class="container">
@@ -194,24 +152,65 @@
         </div>
     </section>
     <!--    end of counter up area-->
-
+<!--   start about top area-->
+<section class="about_top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="about_single_item">
+                    <div class="item_icon">
+                        <img src="img/item_icon.png" alt="item">
+                    </div>
+                    <div class="about_single_item_content">
+                        <h4>Regular Delivery</h4>
+                        <p>Undreakable Products, </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="about_single_item">
+                    <div class="item_icon">
+                        <img src="img/item_icon.png" alt="item">
+                    </div>
+                    <div class="about_single_item_content">
+                        <h4>Premium Delivery</h4>
+                        <p>Glasswares, cosmetics, </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="about_single_item">
+                    <div class="item_icon">
+                        <img src="img/item_icon.png" alt="item">
+                    </div>
+                    <div class="about_single_item_content">
+                        <h4>Exclusive Delivery</h4>
+                        <p>Handled with extra care, Jewelry, Soveneir, etc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--    end of about top area-->
     <!--start calculate area-->
     <section class="calculate_area" id="tracking">
         <div class="container">
             <div class="row" style="display: flex;
             justify-content: center;
             flex-wrap: wrap;">
+            
                 <div class="col-md-5 col-sm-6">
                     <div class="calculate_title">
                         <h2>Calculate your cost</h2>
-                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,</p>
+                        <p>Regular Products</p>
                     </div>
                     <div class="calculate_form">
                         <form>
                             <div class = "form-group">
-                              <label for = "weight">Please enter the weight of the package(kg):</label>
-                              <input id = "weight" type = "number" class = "form-control">
-                            </div>
+                                <label for = "weight">Please enter the weight of the package(kg):</label>
+                                <input id = "weight" type = "number" class = "form-control">
+                              </div>
                             <div class = "form-group">
                               <label for = "height">Please enter the height of the package(ft):</label>
                               <input id = "height" type = "number" class = "form-control">
@@ -231,8 +230,77 @@
                             <button type = "submit" class = "btn btn-success">Calculate!</button>
                           </form>
                           <h4>Your shipping costs are: ₹ <b><span class = "cost"></span></b></h4>
+                          <h4>Your shipping time is: <b><span class = "time"></span></b> Days</h4>
                     </div>
                 </div>
+                <div class="col-md-5 col-sm-6">
+                    <div class="calculate_title">
+                        <h2>Calculate your cost</h2>
+                        <p>Premium Products</p>
+                    </div>
+                    <div class="calculate_form">
+                        <form>
+                            <div class = "form-group">
+                                <label for = "weight1">Please enter the weight of the package(kg):</label>
+                                <input id = "weight1" type = "number" class = "form-control">
+                              </div>
+                            <div class = "form-group">
+                              <label for = "height1">Please enter the height of the package(ft):</label>
+                              <input id = "height1" type = "number" class = "form-control">
+                            </div>
+                            <div class = "form-group">
+                              <label for = "width1">Please enter the width of the package(ft):</label>
+                              <input id = "width1" type = "number" class = "form-control">
+                            </div>
+                            <div class = "form-group">
+                              <label for = "depth1">Please enter the depth of the package(ft):</label>
+                              <input id = "depth1" type = "number" class = "form-control">
+                            </div>
+                            <div class = "form-group">
+                                <label for = "dist1">Please enter the distance(km):</label>
+                                <input id = "dist1" type = "number" class = "form-control">
+                              </div>
+                            <button type = "submit" class = "btn btn-success">Calculate!</button>
+                          </form>
+                          <h4>Your shipping costs are: ₹ <b><span class = "cost1"></span></b></h4>
+                          <h4>Your shipping time is: <b><span class = "time1"></span></b>Days</h4>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-6">
+                    <div class="calculate_title">
+                        <h2>Calculate your cost</h2>
+                        <p>Exclusive Products</p>
+                    </div>
+                    <div class="calculate_form">
+                        <form>
+                            <div class = "form-group">
+                                <label for = "weight2">Please enter the weight of the package(kg):</label>
+                                <input id = "weight2" type = "number" class = "form-control">
+                              </div>
+                            <div class = "form-group">
+                              <label for = "height2">Please enter the height of the package(ft):</label>
+                              <input id = "height2" type = "number" class = "form-control">
+                            </div>
+                            <div class = "form-group">
+                              <label for = "width2">Please enter the width of the package(ft):</label>
+                              <input id = "width2" type = "number" class = "form-control">
+                            </div>
+                            <div class = "form-group">
+                              <label for = "depth2">Please enter the depth of the package(ft):</label>
+                              <input id = "depth2" type = "number" class = "form-control">
+                            </div>
+                            <div class = "form-group">
+                                <label for = "dist2">Please enter the distance(km):</label>
+                                <input id = "dist2" type = "number" class = "form-control">
+                              </div>
+                            <button type = "submit" class = "btn btn-success">Calculate!</button>
+                          </form>
+                          <h4>Your shipping costs are: ₹ <b><span class = "cost2"></span></b></h4>
+                          <h4>Your shipping time is: <b><span class = "time2"></span></b>Days</h4>
+
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </section>

@@ -305,9 +305,9 @@ nav.navbar {
 }
 
 .about_top {
-    padding: 120px 0;
+
     border-bottom: 1px solid #dfdfdf;
-    padding-bottom:70px; 
+   
 }
 .about_single_item {
   margin-bottom: 50px;
@@ -1326,4 +1326,8 @@ outline: none;
 }
 .single-footer .form-control:focus {
 box-shadow: none;
+}
+
+.col-sm-6 {
+    width: 30%;
 }
